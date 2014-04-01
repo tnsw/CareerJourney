@@ -4,7 +4,8 @@ class Manage extends CI_Controller {
 
     function index()
 	{
-                $data["title"] = "Home";
+                $data["title"] = "Management";
+                $data["page"] = "Manage";
 		$this->load->view('header', $data);                
 		$this->load->view('manage');
                 $this->load->view('footer');

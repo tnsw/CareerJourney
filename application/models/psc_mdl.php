@@ -1,6 +1,6 @@
 <?php
 
-class Capability_group extends CI_Model {
+class PSC_mdl extends CI_Model {
 
     function __construct()
     {
@@ -9,29 +9,31 @@ class Capability_group extends CI_Model {
     
     var $name;
     
-    function insert_capability_group($name) {
+    function insert_psc_group($name) {
         $this->name = $name;
-        $this->db->insert('capability_group', $this);
+        $this->db->insert('PSC_Cap_Group', $this);
     }
     
-    function update_capability_group($id,$name) {
+    function update_psc_group($id,$name) {
         $this->name = $name;
-        $this->db->update('capability_group', $this, array('id' => $id));
+        $this->db->update('PSC_Cap_Group', $this, array('id' => $id));
     }
     
-    function delete_capability_group($id) {
-        $this->db->delete('capability_group', array('id' => $id));
+    function delete_psc_group($id) {
+        $this->db->delete('PSC_Cap_Group', array('id' => $id));
     }
     
-    function get_capability_groups() {
-        $query = $this->db->get('capability_group');
+    function get_psc_groups() {
+        $query = $this->db->get('PSC_Cap_Group');
         return $query->result();
     }
      
-    function get_capability_group($id) {
-        $sql = "SELECT * FROM capability_group WHERE id = ?";
+    function get_psc_group($id) {
+        $sql = "SELECT * FROM PSC_Cap_Group WHERE id = ?";
         $query = $this->db->query($sql, array($id));
         return $query->result();
     }   
+       
     
 }
+

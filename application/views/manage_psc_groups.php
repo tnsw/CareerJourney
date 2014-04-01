@@ -1,18 +1,18 @@
       <div class="starter-template">
-        <h1>Capability Groups</h1>
+        <h1>Manage Public Sector Capability Groups</h1>
         <table class="table table-condensed table-bordered">
             <th>
-                <td>Capability Group</td>
-                <td>Rename</td>
+                <td><b>Pubic Sector Capability Groups</b></td>
+                <td><b>Rename</b></td>
             </th>
             <?php $i = 0;
-            foreach ($capability_groups as $group):?>
+            foreach ($PSC_Groups as $group):?>
             <tr>
                 <td><?php  $i++; echo $i;?></td>
                 <td><?php echo $group->name;?></td>
-            <form action="<?php echo base_url(); ?>manage_capability_groups/edit_group" method="POST">
+            <form action="<?php echo base_url(); ?>manage_psc_groups/edit_group" method="POST">
                     <input type="hidden" name="id" value="<?php echo $group->id;?>" />
-                    <td><input type="text" name="name" value="<?php echo $group->name;?>" /></td>
+                    <td><input type="text" class="form-control" name="name" value="<?php echo $group->name;?>" /></td>
                     <td><button type="submit" class="btn">Edit</button></td>
                 </form>
             </tr>
@@ -20,8 +20,8 @@
             <tr>
                 <td></td>
                 <td></td>
-                <form action="<?php echo base_url(); ?>manage_capability_groups/new_group" method="POST">
-                    <td><input type="text" name="name" /></td>
+                <form action="<?php echo base_url(); ?>manage_psc_groups/new_group" method="POST">
+                    <td><input type="text" class="form-control" name="name" /></td>
                     <td><button type="submit" class="btn">Add</button></td>
                 </form>
             </tr>

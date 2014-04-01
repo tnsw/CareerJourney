@@ -35,25 +35,25 @@
         <div class="cover-container">
             
             
-
-          <div class="masthead clearfix">
+        
+          <!--<div class="masthead clearfix">
             <div class="inner">
                 
-              <!--
+           
               <h3 class="masthead-brand">Career Journey Prototype</h3>
-              -->
+        
               
               <ul class="nav masthead-nav">
                 <li><a href="mailto:Kevin.XING@transport.nsw.gov.au">More Information</a></li>
               </ul>
             </div>
-          </div>
-        
+          </div>-->
+              
 
 
           <div class="inner cover">
-            <h1 class="cover-heading">Career Journey</h1>
-            <p class="lead">The Career Journey Protoype will centralise and translate Occupational Specifica Capabilities and Information into a meaningful resource and tool which will enable Transport employees the ability to plan and develop their career path across the Transport cluster.</p>
+            <h1 class="cover-heading">Career Journey App</h1>
+            <p class="lead">This prototype will centralise and translate Occupational Specific Capabilities and Information into a meaningful resource and become a tool which will enable Transport employees the ability to plan and develop their career path across the Transport cluster.</p>
             <p class="lead">
               <a href="<?php echo base_url();?>home" class="btn btn-lg btn-default">Start</a>
             </p>
