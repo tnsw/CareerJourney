@@ -44,13 +44,47 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `careerjourney`.`Agency`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `careerjourney`.`Agency` (
+  `id` INT NOT NULL DEFAULT 6,
+  `name` VARCHAR(256) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `careerjourney`.`Department`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `careerjourney`.`Department` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `agency_id` INT NULL,
+  `roles_id` INT NULL,
+  `name` VARCHAR(256) NULL,
+  PRIMARY KEY (`id`),
+  INDEX `Agency_ID_idx` (`agency_id` ASC),
+  CONSTRAINT `Department_Agency_ID_FK`
+    FOREIGN KEY (`agency_id`)
+    REFERENCES `careerjourney`.`Agency` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `careerjourney`.`Roles`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `careerjourney`.`Roles` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `title` VARCHAR(256) NULL,
   `department_id` INT NULL,
-  PRIMARY KEY (`id`))
+  PRIMARY KEY (`id`),
+  INDEX `Roles_Department_ID_FK_idx` (`department_id` ASC),
+  CONSTRAINT `Roles_Department_ID_FK`
+    FOREIGN KEY (`department_id`)
+    REFERENCES `careerjourney`.`Department` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
@@ -79,40 +113,6 @@ CREATE TABLE IF NOT EXISTS `careerjourney`.`PSC_Roles` (
   CONSTRAINT `PSC_Roles_PSC_Level_ID_FK`
     FOREIGN KEY (`psc_level_id`)
     REFERENCES `careerjourney`.`PSC_Level` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `careerjourney`.`Agency`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `careerjourney`.`Agency` (
-  `id` INT NOT NULL DEFAULT 6,
-  `name` VARCHAR(256) NULL,
-  PRIMARY KEY (`id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `careerjourney`.`Department`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `careerjourney`.`Department` (
-  `id` INT NOT NULL AUTO_INCREMENT,
-  `agency_id` INT NULL,
-  `roles_id` INT NULL,
-  `name` VARCHAR(256) NULL,
-  PRIMARY KEY (`id`),
-  INDEX `Agency_ID_idx` (`agency_id` ASC),
-  INDEX `Role_ID_idx` (`roles_id` ASC),
-  CONSTRAINT `Department_Agency_ID_FK`
-    FOREIGN KEY (`agency_id`)
-    REFERENCES `careerjourney`.`Agency` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `Department_Role_ID_FK`
-    FOREIGN KEY (`roles_id`)
-    REFERENCES `careerjourney`.`Roles` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -329,17 +329,6 @@ COMMIT;
 
 
 -- -----------------------------------------------------
--- Data for table `careerjourney`.`Roles`
--- -----------------------------------------------------
-START TRANSACTION;
-USE `careerjourney`;
-INSERT INTO `careerjourney`.`Roles` (`id`, `title`, `department_id`) VALUES (1, 'Duty Officer', 1);
-INSERT INTO `careerjourney`.`Roles` (`id`, `title`, `department_id`) VALUES (2, 'Network Controller', 1);
-
-COMMIT;
-
-
--- -----------------------------------------------------
 -- Data for table `careerjourney`.`Agency`
 -- -----------------------------------------------------
 START TRANSACTION;
@@ -360,6 +349,17 @@ START TRANSACTION;
 USE `careerjourney`;
 INSERT INTO `careerjourney`.`Department` (`id`, `agency_id`, `roles_id`, `name`) VALUES (1, 4, 1, 'Depot Operation');
 INSERT INTO `careerjourney`.`Department` (`id`, `agency_id`, `roles_id`, `name`) VALUES (2, 4, 2, 'Network Control Centre');
+
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `careerjourney`.`Roles`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `careerjourney`;
+INSERT INTO `careerjourney`.`Roles` (`id`, `title`, `department_id`) VALUES (1, 'Duty Officer', 1);
+INSERT INTO `careerjourney`.`Roles` (`id`, `title`, `department_id`) VALUES (2, 'Network Controller', 1);
 
 COMMIT;
 

@@ -3,8 +3,6 @@
       <p>The NSW Public Sector Capability Framework describes 16 capabilities across four core groups: Personal Attributes, Relationships, Results and Business Enablers. A further four capabilities within the People Management group are for employees who manage people.<p> 
       <p>The capability groups work together to provide an understanding of the knowledge, skills and abilities required by public sector employees.</p>
 
-
-
     </div>
 
     <!-- Modal -->
@@ -78,7 +76,8 @@
           </div>            
         </div>
       </div>
-    </div>
+    </div
+    >
     
     <div class="modal fade" id="commit_to_customer_service" tabindex="-1" role="dialog" aria-labelledby="commit_to_customer_service" aria-hidden="true">
       <div class="modal-dialog">
@@ -1736,6 +1735,8 @@
     
     <div class="row">
        
+    <h4><p>Duty Officer, Depot Operations, State Transit</p></h4>
+    
     <table class="table table-condensed"
         <thead>
             <tr>
@@ -1867,7 +1868,7 @@
 
                 <thead>
                     <tr>
-                        <th>Select a role for comparison:</th>
+                        <th>Select a role for comparison</th>
                         <th></th>
                     <tr>
 

@@ -5,7 +5,7 @@
         <ul class="list-group col-lg-4 text-left">
             <li><a href="<?php base_url(); ?>manage_agency">Manage Agency</a></li>
             <li><a href="<?php base_url(); ?>manage_department">Manage Department</a></li>
-            <li><a href="<?php base_url(); ?>manage_psc_groups">Manage Role</a></li>
+            <li><a href="<?php base_url(); ?>manage_role">Manage Role</a></li>
             <li><a href="<?php base_url(); ?>manage_psc_groups">Manage PSC</a></li>
         </ul>
         <ul class="list-group col-lg-4 text-left">     
