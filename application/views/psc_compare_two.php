@@ -1736,16 +1736,17 @@
     <div class="row">
        
         <h4><font color = "#555"><p><i>Duty Officer, Depot Operations, State Transit</i></p></font></h4>
+        <br>        
     
     <table class="table table-condensed"
         <thead>
             <tr>
-                <th>Capability Group</th>
-                <th>Capability Name</th>
-                <th>Current Role Level</th>
-                <th>Selected Role Level</th>
-                <th>Development Gap</th>                
-                <th>Available Courses</th>
+                <th width="20%">Capability Group</th>
+                <th width="20%">Capability Name</th>
+                <th width="15%">Current Role Level</th>
+                <th width="15%">Selected Role Level</th>
+                <th width="10%">Development Gap</th>                
+                <th width="20%">Available Courses</th>
             </tr>        
             
         
