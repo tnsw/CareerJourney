@@ -1730,43 +1730,62 @@
           <div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>
         </div>
       </div>
-    </div>       
+    </div>        
     
     
     <div class="row">
        
         <h4><font color = "#555"><p><i>Duty Officer, Depot Operations, State Transit</i></p></font></h4>
-
-        
+    
     <table class="table table-condensed"
         <thead>
             <tr>
-                <th>Capability Group</th>
-                <th>Capability Name</th>
-                <th>Current Level</th>
-
+                <th >Capability Group</th>
+                <th >Capability Name</th>
+                <th >Current Level</th>
+                <th >Selected Role 1 Level</th>
+                <th >Selected Role 2 Level</th>
                 
-            </tr>        
+            </tr>   
+  
         </thead>
         <tbody>
+            
+            
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Duty Officer<p>Depot Operations</p>State Transit</td>
+                <td>Network Controller<p>Network Control Centre</p>Sydney Trains</td>       
+                <td>Staff Supervisor<p>Depot Operations</p>State Transit</td>     
+            </tr>                  
+            
             
             <!-- Next row -->
             <tr>
                 <td rowspan="4">Personality Attributes</td>
                 <td><a data-toggle="modal" href="#display_resilience_and_courage">Display Resilience and Courage</a></td>
                 <td><a data-toggle="modal" href="#display_resilience_and_courage_lvl">Level 1</a></td>
+                <td><a data-toggle="modal" href="#display_resilience_and_courage_lvl"><font color = "7a43b6"><b>Level 5</b></font></a></td>
+                <td><a data-toggle="modal" href="#display_resilience_and_courage_lvl">Level 3</a></td>
             </tr>
             <tr>
                 <td><a data-toggle="modal" href="#act_with_integrity">Act with Integrity</a></td>
-                <td><a data-toggle="modal" href="#act_with_integrity_lvl">Level 2</a></td>                
+                <td><a data-toggle="modal" href="#act_with_integrity_lvl">Level 2</a></td>   
+                <td><a data-toggle="modal" href="#act_with_integrity_lvl"><font color = "7a43b6"><b>Level 4</b></a></td>   
+                <td><a data-toggle="modal" href="#act_with_integrity_lvl"><font color = "7a43b6"><b>Level 4</b></a></td>   
             </tr>
             <tr>
                 <td><a data-toggle="modal" href="#manage_self">Manage Self</a></td>              
-                <td><a data-toggle="modal" href="#manage_self_lvl">Level 3</td>
+                <td><a data-toggle="modal" href="#manage_self_lvl"><font color = "7a43b6"><b>Level 3</b></a></td>
+                <td><a data-toggle="modal" href="#manage_self_lvl"><font color = "7a43b6"><b>Level 3</b></a></td>
+                <td><a data-toggle="modal" href="#manage_self_lvl">Level 2</a></td>
             </tr>
             <tr>                
                 <td><a data-toggle="modal" href="#value_diversity">Value Diversity</a></td>
-                <td><a data-toggle="modal" href="#value_diversity_lvl">Level 4</a></td>            
+                <td><a data-toggle="modal" href="#value_diversity_lvl"><font color = "7a43b6"><b>Level 4</b></a></td>     
+                <td><a data-toggle="modal" href="#value_diversity_lvl"><font color = "7a43b6"><b>Level 4</b></a></td> 
+                <td><a data-toggle="modal" href="#value_diversity_lvl">Level 1</a></td> 
             </tr>
             <!-- Next row -->
                         
@@ -1774,19 +1793,27 @@
                 <td rowspan="4">Relationships</td>
                 
                 <td><a data-toggle="modal" href="#communicate_effectively">Communicate Effectively</a></td>
-                <td><a data-toggle="modal" href="#communicate_effectively_lvl">Level 2</td>
+                <td><a data-toggle="modal" href="#communicate_effectively_lvl"><font color = "7a43b6"><b>Level 2</b></a></td>
+                <td><a data-toggle="modal" href="#communicate_effectively_lvl">Level 1</a></td>
+                <td><a data-toggle="modal" href="#communicate_effectively_lvl">Level 1</a></td>
             </tr>
             <tr>
                 <td><a data-toggle="modal" href="#commit_to_customer_service">Commit to Customer Service</a></td>
-                <td><a data-toggle="modal" href="#commit_to_customer_service_lvl">Level 3</a></td>                
+                <td><a data-toggle="modal" href="#commit_to_customer_service_lvl"><font color = "7a43b6"><b>Level 3</b></a></td>      
+                <td><a data-toggle="modal" href="#commit_to_customer_service_lvl">Level 1</a></td> 
+                <td><a data-toggle="modal" href="#commit_to_customer_service_lvl">Level 1</a></td> 
             </tr>
             <tr>
                 <td><a data-toggle="modal" href="#work_collaboratively">Work Collaboratively</a></td>              
-                <td><a data-toggle="modal" href="#work_collaboratively_lvl">Level 4</td>
+                <td><a data-toggle="modal" href="#work_collaboratively_lvl"><font color = "7a43b6"><b>Level 4</b></a></td>
+                <td><a data-toggle="modal" href="#work_collaboratively_lvl">Level 2</a></td>
+                <td><a data-toggle="modal" href="#work_collaboratively_lvl">Level 2</a></td>
             </tr>
             <tr>                
                 <td><a data-toggle="modal" href="#influence_and_negotiate">Influence and Negotiate</a></td>
-                <td><a data-toggle="modal" href="#influence_and_negotiate_lvl">Level 5</a></td>            
+                <td><a data-toggle="modal" href="#influence_and_negotiate_lvl"><font color = "7a43b6"><b>Level 5</b></a></td>           
+                <td><a data-toggle="modal" href="#influence_and_negotiate_lvl">Level 3</a></td>  
+                <td><a data-toggle="modal" href="#influence_and_negotiate_lvl">Level 3</a></td> 
             </tr>
 
             <!-- Next row -->
@@ -1796,18 +1823,26 @@
                 
                 <td><a data-toggle="modal" href="#deliver_results">Deliver Results</a></td>
                 <td><a data-toggle="modal" href="#deliver_results_lvl">Level 3</a></td>
+                <td><a data-toggle="modal" href="#deliver_results_lvl"><font color = "7a43b6"><b>Level 4</b></a></td>
+                <td><a data-toggle="modal" href="#deliver_results_lvl"><font color = "7a43b6"><b>Level 4</b></a></td>
             </tr>
             <tr>
                 <td><a data-toggle="modal" href="#plan_and_prioritise">Plan and Prioritise</a></td>
-                <td><a data-toggle="modal" href="#plan_and_prioritise_lvl">Level 4</a></td>                
+                <td><a data-toggle="modal" href="#plan_and_prioritise_lvl">Level 4</a></td> 
+                <td><a data-toggle="modal" href="#plan_and_prioritise_lvl"><font color = "7a43b6"><b>Level 5</b></a></td> 
+                <td><a data-toggle="modal" href="#plan_and_prioritise_lvl">Level 4</a></td> 
             </tr>
             <tr>
                 <td><a data-toggle="modal" href="#think_and_solve_problems">Think and Solve Problems</a></td>              
-                <td><a data-toggle="modal" href="#think_and_solve_problems_lvl">Level 5</a></td>
+                <td><a data-toggle="modal" href="#think_and_solve_problems_lvl"><font color = "7a43b6"><b>Level 5</b></a></td>
+                <td><a data-toggle="modal" href="#think_and_solve_problems_lvl">Level 1</a></td>
+                <td><a data-toggle="modal" href="#think_and_solve_problems_lvl">Level 2</a></td>
             </tr>
             <tr>                
                 <td><a data-toggle="modal" href="#demonstrate_accountability">Demonstrate Accountability</a></td>
                 <td><a data-toggle="modal" href="#demonstrate_accountability_lvl">Level 1</a></td>            
+                <td><a data-toggle="modal" href="#demonstrate_accountability_lvl"><font color = "7a43b6"><b>Level 2</b></a></td>  
+                <td><a data-toggle="modal" href="#demonstrate_accountability_lvl"><font color = "7a43b6"><b>Level 2</b></a></td>
             </tr>
             
             <!-- Next row -->
@@ -1816,20 +1851,28 @@
                 <td rowspan="4">Business Enablers</td>
                 
                 <td><a data-toggle="modal" href="#finance">Finance</a></td>
-                <td><a data-toggle="modal" href="#finance_lvl">Level 4</a></td>
+                <td><a data-toggle="modal" href="#finance_lvl"><font color = "7a43b6"><b>Level 4</b></a></td>
+                <td><a data-toggle="modal" href="#finance_lvl">Level 3</a></td>
+                <td><a data-toggle="modal" href="#finance_lvl">Level 2</a></td>
             </tr>
             <tr>
                 <td><a data-toggle="modal" href="#technology">Technology</a></td>
-                <td><a data-toggle="modal" href="#technology_lvl">Level 5</a></td>                
+                <td><a data-toggle="modal" href="#technology_lvl"><font color = "7a43b6"><b>Level 5</b></a></td>  
+                <td><a data-toggle="modal" href="#technology_lvl">Level 1</a></td>
+                <td><a data-toggle="modal" href="#technology_lvl">Level 1</a></td>
             </tr>
             <tr>
                 <td><a data-toggle="modal" href="#procurement_and_contract_management">Procurement and Contract Management</a></td>              
                 <td><a data-toggle="modal" href="#procurement_and_contract_management_lvl">Level 1</a></td>
+                <td><a data-toggle="modal" href="#procurement_and_contract_management_lvl"><font color = "7a43b6"><b>Level 4</b></a></td>
+                <td><a data-toggle="modal" href="#procurement_and_contract_management_lvl"><font color = "7a43b6"><b>Level 4</b></a></td>
             </tr>
             <tr>                
                 <td><a data-toggle="modal" href="#project_management">Project Management</a></td>
-                <td><a data-toggle="modal" href="#project_management_lvl">Level 2</a></td>            
-            </tr>            
+                <td><a data-toggle="modal" href="#project_management_lvl">Level 2</a></td>       
+                <td><a data-toggle="modal" href="#project_management_lvl"><font color = "7a43b6"><b>Level 5</b></a></td>
+                <td><a data-toggle="modal" href="#project_management_lvl">Level 4</a></td>  
+            </tr>                 
 
             <!-- Next row -->            
             
@@ -1837,38 +1880,28 @@
                 <td rowspan="4">People Management</td>
                 
                 <td><a data-toggle="modal" href="#manage_and_develop_people">Manage and Develop People</a></td>
-                <td><a data-toggle="modal" href="#manage_and_develop_people_lvl">Level 5</a></td>
+                <td><a data-toggle="modal" href="#manage_and_develop_people_lvl"><font color = "7a43b6"><b>Level 5</b></a></td>
+                <td><a data-toggle="modal" href="#manage_and_develop_people_lvl"><font color = "7a43b6"><b>Level 5</b></a></td>
+                <td><a data-toggle="modal" href="#manage_and_develop_people_lvl">Level 4</a></td>
             </tr>
             <tr>
                 <td><a data-toggle="modal" href="#inspire_direction_and_purpose">Inspire Direction and Purpose</a></td>
-                <td><a data-toggle="modal" href="#inspire_direction_and_purpose_lvl">Level 1</a></td>                
+                <td><a data-toggle="modal" href="#inspire_direction_and_purpose_lvl">Level 1</a></td>     
+                <td><a data-toggle="modal" href="#inspire_direction_and_purpose_lvl"><font color = "7a43b6"><b>Level 4</b></a></td> 
+                <td><a data-toggle="modal" href="#inspire_direction_and_purpose_lvl"><font color = "7a43b6"><b>Level 4<b></a></td> 
             </tr>
             <tr>
                 <td><a data-toggle="modal" href="#optimise_business_outcomes">Optimise Business Outcomes</a></td>              
                 <td><a data-toggle="modal" href="#optimise_business_outcomes_lvl">Level 2</a></td>
+                <td><a data-toggle="modal" href="#optimise_business_outcomes_lvl">Level 1</a></td>
+                <td><a data-toggle="modal" href="#optimise_business_outcomes_lvl"><font color = "7a43b6"><b>Level 3</b></a></td>
             </tr>
             <tr>                
                 <td><a data-toggle="modal" href="#manage_reform_and_change">Manage Reform and Change</a></td>
-                <td><a data-toggle="modal" href="#manage_reform_and_change_lvl">Level 3</a></td>            
+                <td><a data-toggle="modal" href="#manage_reform_and_change_lvl"><font color = "7a43b6"><b>Level 3</b></a></td>      
+                <td><a data-toggle="modal" href="#manage_reform_and_change_lvl">Level 1</a></td>  
+                <td><a data-toggle="modal" href="#manage_reform_and_change_lvl">Level 1</a></td> 
             </tr>                 
-            
-            <tr>
-                <td rowspan="4">Occupational Specific Capability and Information</td>                                
-                <td></td>              
-                <td></td>                                                                
-            </tr>
-            <tr>
-                <td><a href="<?php echo base_url();?>osc">Show more details...</a></td>
-                <td></td>                
-            </tr>           
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-            </tr>
             
            
             
@@ -1896,8 +1929,7 @@
                 <tbody>
                     
                     <!-- ADD action for form -->
-                        
-                    <form action="<?php echo base_url(); ?>psc_compare_two" method="POST">    
+                    <form action="<?php echo base_url(); ?>manage_agency/new_group" method="POST">
 
                   
                         <tr>

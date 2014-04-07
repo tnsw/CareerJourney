@@ -7,9 +7,10 @@ class Department_mdl extends CI_Model {
         parent::__construct();
     }
        
-    function insert_department_group($name) {
+    function insert_department_group($name, $agency_id) {
         $this->name = $name;
-        $this->db->insert('department', $this);
+        $this->agency_id = $agency_id;
+        $this->db->insert('department', $this, array('id' => $id));
     }
     
     function update_department_group($id,$name,$agency_id) {

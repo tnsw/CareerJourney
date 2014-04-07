@@ -46,7 +46,14 @@
                 <td></td>                
                 <form action="<?php echo base_url(); ?>manage_department/new_group" method="POST">
                     <td><input class="form-control" type="text" name="name" /></td>
-                    <td></td>
+                    <td>
+                        <select name="agency_id" class="form-control">
+                            <?php foreach($agency as $a){ ?>      
+                                <option value="<?php echo $a->id; ?>"><?php echo $a->name; ?></option>             
+                            <?php } ?>
+                              
+                        </select>                          
+                    </td>    
                     <td><button type="submit" class="btn">Add</button></td>
                 </form>
 
