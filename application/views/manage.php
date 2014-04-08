@@ -9,7 +9,7 @@
             <li><a href="<?php base_url(); ?>manage_psc_groups">Manage PSC</a></li>
         </ul>
         <ul class="list-group col-lg-4 text-left">     
-            <li><a href="<?php base_url(); ?>manage_capability_groups">Manage OSC</a></li>
+            <li><a href="<?php base_url(); ?>manage_psc_groups">Manage OSC</a></li>
             <li><a href="<?php base_url(); ?>manage_psc_groups">Manage OSI</a></li>           
         </ul>
     </div>
