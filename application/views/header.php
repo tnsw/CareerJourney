@@ -20,6 +20,10 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+    
+    
+    
   </head>
 
   <body>
@@ -60,7 +64,7 @@
         
         
           <ul class ="nav navbar-nav navbar-right">
-               <li class="active"><a class="navbar-right" href="mailto:Kevin.XING@transport.nsw.gov.au">More Information</a></li>
+               <li class="active"><a class="navbar-right" href="<?php echo base_url();?>contact">More Information</a></li>
           </ul>
         </div><!--/.nav-collapse -->
         

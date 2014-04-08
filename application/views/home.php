@@ -5,3 +5,9 @@
         
 
      </div>
+
+    <div class="jumbotron">
+                
+      	<p class = "text-center">Please select from the navigation above to begin your journey.</p>
+    </div>
+
